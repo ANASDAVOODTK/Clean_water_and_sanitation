@@ -1,6 +1,6 @@
 # LiquiDa
  LiquiDa is a Mobile App which helps us to ensure availability and sustainable management of clean water.
- [Check This Branch For Hardware Part](https://github.com/upkarlidder/ibmhacks)
+ [Check This Branch For Hardware Part](https://github.com/ANASDAVOODTK/Clean_water_and_sanitation/tree/IoT_Branch)
  
  ![Video transcription/translation app](https://github.com/ANASDAVOODTK/Clean_water_and_sanitation/blob/master/Capture.PNG)
 ## Contents
