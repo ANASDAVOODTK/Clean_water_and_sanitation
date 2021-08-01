@@ -42,7 +42,7 @@ An Application which helps us to ensure availability and sustainable management 
 
 ## Demo video
 
-[![Watch the video](https://github.com/Call-for-Code/Liquid-Prep/blob/master/images/readme/IBM-interview-video-image.png)](https://youtu.be/8D5-Wt8p45M)
+[![Watch the video](https://github.com/ANASDAVOODTK/Clean_water_and_sanitation/blob/master/tumb.png)](https://youtu.be/8D5-Wt8p45M)
 
 ## The architecture
 
@@ -65,7 +65,7 @@ It's in a free tier IBM Cloud Kubernetes cluster. In the future we plan to run o
 
 See below for our proposed schedule on next steps after Call for Code 2021 submission.
 
-![Roadmap](./images/roadmap.jpg)
+![Roadmap](https://github.com/ANASDAVOODTK/Clean_water_and_sanitation/blob/master/roadmap.jpg)
 
 ## Getting started
 
@@ -92,17 +92,7 @@ You can find a running system to test at [callforcode.mybluemix.net](http://call
 
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
-
 ## Authors
-
-<a href="https://github.com/Call-for-Code/Project-Sample/graphs/contributors">
-  <img src="https://contributors-img.web.app/image?repo=Call-for-Code/Project-Sample" />
-</a>
-
-- **Billie Thompson** - _Initial work_ - [PurpleBooth](https://github.com/PurpleBooth)
 
 ## License
 
