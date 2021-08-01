@@ -42,7 +42,7 @@ An Application which helps us to ensure availability and sustainable management 
 
 ## Demo video
 
-[![Watch the video](https://github.com/ANASDAVOODTK/Clean_water_and_sanitation/blob/master/tumb.png)](https://youtu.be/8D5-Wt8p45M)
+[![Watch the video](https://github.com/ANASDAVOODTK/Clean_water_and_sanitation/blob/master/tumb.PNG)](https://youtu.be/8D5-Wt8p45M)
 
 ## The architecture
 
