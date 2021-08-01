@@ -12,3 +12,9 @@ The TDS in water value as you can see on the LCD screen indicates how many milli
 
 ![Video transcription/translation app](https://github.com/ANASDAVOODTK/Clean_water_and_sanitation/blob/IoT_Branch/tds.jpg)
 
+## This is the view users can see water quality in there area
+
+![Video transcription/translation app](https://github.com/ANASDAVOODTK/Clean_water_and_sanitation/blob/IoT_Branch/tds.jpg)
+
+
+
