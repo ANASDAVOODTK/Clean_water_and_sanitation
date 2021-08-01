@@ -5,3 +5,8 @@ Have you ever tried to find out what is the pH value and TDS value of the water 
 
 
 ![Video transcription/translation app](https://github.com/ANASDAVOODTK/Clean_water_and_sanitation/blob/IoT_Branch/iot.jpg)
+
+
+The TDS in water value as you can see on the LCD screen indicates how many milligrams of soluble solids are dissolved in one liter of water. Many TDS meters display the TDS value in ppm which stands for parts per million. In general, the higher the TDS value, the more soluble solids are dissolved in water, and the less clean the water is. Right now the water under test is excellent as the TDS value is less than 300.
+![Video transcription/translation app](https://github.com/ANASDAVOODTK/Clean_water_and_sanitation/blob/IoT_Branch/tds.jpg)
+
