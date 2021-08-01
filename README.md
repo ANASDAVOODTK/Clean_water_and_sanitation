@@ -65,7 +65,7 @@ It's in a free tier IBM Cloud Kubernetes cluster. In the future we plan to run o
 
 See below for our proposed schedule on next steps after Call for Code 2021 submission.
 
-![Roadmap](https://github.com/ANASDAVOODTK/Clean_water_and_sanitation/blob/master/roadmap.jpg)
+![Roadmap](https://github.com/ANASDAVOODTK/Clean_water_and_sanitation/blob/master/roadmap.png)
 
 ## Getting started
 
