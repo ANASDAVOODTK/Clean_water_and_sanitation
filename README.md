@@ -32,13 +32,21 @@ LiquiDa is a Mobile App which helps us to ensure availability and sustainable ma
 
 Water is the natural resource that is most threatened by climate change and is a prerequisite for life on earth. According to the World Health Organization, 2.2 billion people around the world do not have safely managed drinking water services, 4.2 billion people do not have safely managed sanitation services, and 3 billion people lack basic handwashing facilities. These services are critical in preventing the spread of COVID-19 and other diseases. Even in areas that have these services, there are vast inequalities in the accessibility, availability, and quality of the services.
 
+The main problems we try to solev is :
+* There is no platform to know the groundwater level
+* No Platform to get  water quantity, quality at particular place
+* Limited Awareness platform about clean water and sanitisation
+* No interactive voice assistant
+* No platform to know water quality testing labs
+
+
 ### How can technology help?
 
 From intelligent solutions for small farmers to recycling showers, technology can make a significant impact on the availability of water and its consumption.
 To encourage optimal water use by people and local governments and to incentivize water sustainability, we propose a platform for water data collection with API, Water Quality Testing Using IoT, Awareness about clean water sanitation.
 
 ### The idea
-An Application which helps us to ensure availability and sustainable management of clean water
+An Application which helps us to ensure availability and sustainable management of clean water. And we are trying to implemt a common platform for both the people and government authorities to upload data about water quality.
 
 ## Demo video
 
