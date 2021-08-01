@@ -265,16 +265,38 @@ public class BoatActivity extends AppCompatActivity {
 
 
                                                     String abc = outMessage.getMessage();
-                                                    if (abc.equals("Showing map"))
+                                                    if (abc.equals("Opening Water Map!") | abc.equals("Stay tight, looking for water resources!"))
                                                     {
                                                         new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
                                                             @Override
                                                             public void run() {
-                                                                //porgrammm
+                                                                Intent intent = new Intent(BoatActivity.this,MapActivity.class);
+                                                                startActivity(intent);
                                                             }
                                                         }, 1500);
 
 
+                                                    }
+                                                    else if(abc.equals("showing rainfall statics"))
+                                                    {
+                                                        new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
+                                                            @Override
+                                                            public void run() {
+                                                                Intent intent = new Intent(BoatActivity.this,RainfalActivity.class);
+                                                                startActivity(intent);
+                                                            }
+                                                        }, 1500);
+                                                    }
+
+                                                    else if(abc.equals("Floods can occur suddenly which are known as flash floods or build up gradually. In the present day"))
+                                                    {
+                                                        new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
+                                                            @Override
+                                                            public void run() {
+                                                                Intent intent = new Intent(BoatActivity.this,CovidetailsActivity.class);
+                                                                startActivity(intent);
+                                                            }
+                                                        }, 1500);
                                                     }
 
 

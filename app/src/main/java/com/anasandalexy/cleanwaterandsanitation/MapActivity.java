@@ -6,6 +6,7 @@ import androidx.appcompat.content.res.AppCompatResources;
 import androidx.core.graphics.drawable.DrawableCompat;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.drawable.Drawable;
@@ -137,7 +138,8 @@ public class MapActivity extends AppCompatActivity implements
                             @Override
                             public boolean onMapClick(@NonNull @NotNull LatLng point) {
 
-                                Toast.makeText(MapActivity.this, "done", Toast.LENGTH_SHORT).show();
+                                Intent intent = new Intent(MapActivity.this , WaterQuality.class);
+                                startActivity(intent);
                                 return false;
                             }
                         });

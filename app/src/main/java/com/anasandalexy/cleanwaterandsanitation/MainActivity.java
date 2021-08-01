@@ -12,6 +12,7 @@ import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -19,6 +20,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.card.MaterialCardView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.loopj.android.http.AsyncHttpClient;
@@ -50,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
     LocationManager mLocationManager;
     LocationListener mLocationListner;
+    BottomNavigationView bottomNavigation;
 
 
     @Override
@@ -57,6 +60,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
+
+        bottomNavigation = findViewById(R.id.bottomNavigationView);
+        bottomNavigation.getMenu().getItem(0).setChecked(true);
 
         weatherState = findViewById(R.id.weatherCondition);
         Temperature = findViewById(R.id.temperature);
@@ -66,6 +72,37 @@ public class MainActivity extends AppCompatActivity {
         wind = findViewById(R.id.wind);
         pressure = findViewById(R.id.pressure);
         humidity = findViewById(R.id.humidity);
+
+        bottomNavigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.hotspot:
+                        Intent intent1 = new Intent(MainActivity.this,CovidetailsActivity.class);
+                        overridePendingTransition(0, 0);
+                        startActivity(intent1);
+                        finish();
+                        overridePendingTransition(0, 0);
+                        break;
+                    case R.id.more:
+                        //Intent intent = new Intent(MainActivity2.this,HotspotActivity.class);
+                        overridePendingTransition(0, 0);
+                        //startActivity(intent);
+                        finish();
+                        overridePendingTransition(0, 0);
+                        break;
+                    case R.id.vaccine:
+
+                       // Intent intent2 = new Intent(MainActivity2.this,VaccineActivity.class);
+                        overridePendingTransition(0, 0);
+                       // startActivity(intent2);
+                        finish();
+                        overridePendingTransition(0, 0);
+                        break;
+                }
+                return true;
+            }
+        });
 
         MaterialCardView materialCardView = findViewById(R.id.tank);
         materialCardView.setOnClickListener(new View.OnClickListener() {
