@@ -31,11 +31,11 @@ Water is the natural resource that is most threatened by climate change and is a
 
 ### How can technology help?
 
-Schools and teachers can continue to engage with their students through virtual classrooms, and even create interactive spaces for classes. As parents face a new situation where they may need to homeschool their children, finding appropriate online resources is important as well.
+From intelligent solutions for small farmers to recycling showers, technology can make a significant impact on the availability of water and its consumption.
+To encourage optimal water use by people and local governments and to incentivize water sustainability, we propose a platform for water data collection with API, Water Quality Testing Using IoT, Awareness about clean water sanitation.
 
 ### The idea
-
-It's imperative that learning and creating can continue when educational institutions have to shift the way they teach in times of crises, such as the COVID-19 pandemic. Providing a set of open source tools, backed by IBM Cloud and Watson Services, will enable educators to more easily make content available for their students.
+An Application which helps us to ensure availability and sustainable management of clean water
 
 ## Demo video
 
@@ -43,7 +43,7 @@ It's imperative that learning and creating can continue when educational institu
 
 ## The architecture
 
-![Video transcription/translation app](https://developer.ibm.com/developer/tutorials/cfc-starter-kit-speech-to-text-app-example/images/cfc-covid19-remote-education-diagram-2.png)
+![Video transcription/translation app](https://dw1.s81c.com/developer-static-pages/callforcode/en/get-started/climate-change/clean-water/images/cfc-cleanwater-architecture.png)
 
 1. The user navigates to the site and uploads a video file.
 2. Watson Speech to Text processes the audio and extracts the text.
