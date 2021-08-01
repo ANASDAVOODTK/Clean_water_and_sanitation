@@ -1,5 +1,7 @@
 # LiquiDa
  LiquiDa is a Mobile App which helps us to ensure availability and sustainable management of clean water.
+ 
+ ![Video transcription/translation app](https://dw1.s81c.com/developer-static-pages/callforcode/en/get-started/climate-change/clean-water/images/cfc-cleanwater-architecture.png)
 ## Contents
 
 - [LiquiDa](#LiquiDa)
