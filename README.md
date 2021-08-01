@@ -1,5 +1,5 @@
 # LiquiDa
-
+ LiquiDa is a Mobile App which helps us to ensure availability and sustainable management of clean water.
 ## Contents
 
 - [LiquiDa](#LiquiDa)
