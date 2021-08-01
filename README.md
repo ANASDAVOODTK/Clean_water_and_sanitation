@@ -69,9 +69,9 @@ The project currently does the following things.
 - Feature 2
 - Feature 3
 
-It's in a free tier IBM Cloud Kubernetes cluster. In the future we plan to run on Red Hat OpenShift, for example.
+It's in a free tier IBM Cloud and use only the services avaliable in lite account. In the future we plan to make to serverless by fetching the data in realtime.
 
-See below for our proposed schedule on next steps after Call for Code 2021 submission.
+See below for our roadmap.
 
 ![Roadmap](https://github.com/ANASDAVOODTK/Clean_water_and_sanitation/blob/master/roadmap.png)
 
@@ -89,12 +89,12 @@ You can find a running system to test at [callforcode.mybluemix.net](http://call
 
 ## Built with
 
-- [IBM Cloudant](https://cloud.ibm.com/catalog?search=cloudant#search_results) - The NoSQL database used
-- [IBM Cloud Functions](https://cloud.ibm.com/catalog?search=cloud%20functions#search_results) - The compute platform for handing logic
+- [IBM Watson](https://www.ibm.com/watson) - For intrecting with voice assistant
+- [IBM Block Storage](https://www.ibm.com/cloud/learn/block-storage) - A storage platform to store JSON Data
 - [IBM API Connect](https://cloud.ibm.com/catalog?search=api%20connect#search_results) - The web framework used
-- [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-- [Maven](https://maven.apache.org/) - Dependency management
-- [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+- [Firebase](https://firebase.google.com/) - Realtime Database
+- [Volley Library](https://developer.android.com/training/volley/) - API Management
+- [Mapbox](https://www.mapbox.com/) - Used to generate RSS Feeds
 
 ## Contributing
 
