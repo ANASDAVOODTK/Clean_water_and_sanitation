@@ -1,11 +1,609 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/LingthBlue"
     tools:context=".MainActivity">
 
-   
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.8"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:text="LiquiDa"
+                android:textColor="@color/purple_500"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="0dp" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_marginTop="10sp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="60dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10sp"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="10sp">
+
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.01"
+                            app:srcCompat="@drawable/ic_baseline_location_on_24"
+                            tools:ignore="VectorDrawableCompat" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:layout_weight="1"
+                            android:textSize="17sp"
+                            android:text="Kerala" />
+                    </LinearLayout>
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:backgroundTint="#79BBEF"
+                        app:cardCornerRadius="8sp"
+                        android:layout_marginStart="10sp"
+                        android:layout_marginEnd="10sp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginTop="5sp"
+                                android:orientation="vertical"
+                                >
+
+                                <com.google.android.material.card.MaterialCardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="80sp"
+                                    android:layout_marginStart="8sp"
+                                    android:id="@+id/rainfall"
+                                    android:layout_marginEnd="8sp"
+                                    android:layout_marginTop="8sp"
+                                    android:backgroundTint="#F6F9FB"
+                                    app:cardCornerRadius="6sp"
+                                    >
+
+                                    <com.yangp.ypwaveview.YPWaveView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        app:animatorEnable="true"
+                                        app:textHidden="false"
+                                        app:shapeType="circle"
+                                        app:frontColor="#0C7FDC"
+                                        app:behideColor="#8CB1D6"
+                                        app:borderColor="#68A1CF"
+                                        app:borderWidthSize="4dp"
+                                        app:textColor="#3F51B5"
+                                        app:max="1000"
+                                        app:progress="270"
+                                        app:strong="90"
+                                        app:shapePadding="1dp"/>
+
+                                </com.google.android.material.card.MaterialCardView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/montserrat_bold"
+                                    android:textSize="14sp"
+                                    android:textColor="@color/white"
+                                    android:text="Rain Fall" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginTop="5sp"
+                                android:orientation="vertical"
+                                >
+
+                                <com.google.android.material.card.MaterialCardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="80sp"
+                                    android:id="@+id/gw"
+                                    android:layout_marginStart="8sp"
+                                    android:layout_marginEnd="8sp"
+                                    android:layout_marginTop="8sp"
+                                    android:backgroundTint="#F6F9FB"
+                                    app:cardCornerRadius="6sp"
+                                    >
+
+                                    <com.yangp.ypwaveview.YPWaveView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        app:animatorEnable="true"
+                                        app:textHidden="false"
+                                        app:shapeType="circle"
+                                        app:frontColor="#0C7FDC"
+                                        app:behideColor="#CFAE7C"
+                                        app:borderColor="#68A1CF"
+                                        app:borderWidthSize="4dp"
+                                        app:textColor="#3F51B5"
+                                        app:max="1000"
+                                        app:progress="512"
+                                        app:strong="90"
+                                        app:shapePadding="1dp"/>
+
+                                </com.google.android.material.card.MaterialCardView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/montserrat_bold"
+                                    android:text="Ground Water"
+                                    android:textColor="@color/white"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/map"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginTop="5sp"
+                                android:orientation="vertical"
+                                >
+
+                                <com.google.android.material.card.MaterialCardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="80sp"
+                                    android:layout_marginStart="8sp"
+                                    android:layout_marginEnd="8sp"
+                                    android:layout_marginTop="8sp"
+                                    android:backgroundTint="#F6F9FB"
+                                    app:cardCornerRadius="6sp"
+                                    >
+
+                                    <com.airbnb.lottie.LottieAnimationView
+                                        android:id="@+id/animationView"
+                                        android:layout_width="150dp"
+                                        android:layout_height="100sp"
+                                        android:layout_marginTop="-10sp"
+                                        android:layout_marginStart="-18sp"
+                                        app:lottie_rawRes="@raw/map1"
+                                        app:lottie_autoPlay="true"
+                                        app:lottie_loop="true"/>
+
+                                </com.google.android.material.card.MaterialCardView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/montserrat_bold"
+                                    android:text="Water Map"
+                                    android:textColor="@color/white"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25sp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10sp"
+                        android:layout_weight="1">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="450dp"
+                            android:backgroundTint="#45A0EA"
+                            app:cardCornerRadius="15sp"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/weatherIcon"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50sp"
+                                    android:layout_marginTop="10sp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/finding">
+
+                                </ImageView>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_above="@id/cityFinder">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/temperature"
+                                        android:paddingStart="30dp"
+                                        android:textSize="50sp"
+                                        android:layout_gravity="center"
+                                        android:textStyle="bold"
+                                        android:textColor="#ffffff"
+                                        android:text="0*C"
+                                        android:paddingLeft="30dp">
+
+                                    </TextView>
+
+
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/weatherCondition"
+                                        android:textSize="20sp"
+                                        android:gravity="center"
+                                        android:textColor="#ffffff"
+                                        android:text="---------"
+                                        android:paddingStart="10sp"
+                                        android:paddingLeft="10sp">
+
+                                    </TextView>
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/cityName"
+                                        android:textStyle="bold"
+                                        android:textSize="25sp"
+                                        android:layout_gravity="center"
+                                        android:maxLength="14"
+                                        android:gravity="center"
+                                        android:text="Fetching___"
+                                        android:paddingStart="10sp"
+                                        android:textColor="#ffffff"
+                                        android:paddingLeft="10sp">
+
+                                    </TextView>
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="8sp"
+                                        android:textStyle="bold"
+                                        android:textSize="17sp"
+                                        android:layout_gravity="center"
+                                        android:maxLength="14"
+                                        android:gravity="center"
+                                        android:text="Wind Speed"
+                                        android:paddingStart="10sp"
+                                        android:textColor="#ffffff"
+                                        android:paddingLeft="10sp">
+
+                                    </TextView>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/wind"
+                                        android:layout_marginTop="1sp"
+                                        android:textStyle="bold"
+                                        android:textSize="25sp"
+                                        android:layout_gravity="center"
+                                        android:maxLength="14"
+                                        android:gravity="center"
+                                        android:text="Fetching___"
+                                        android:paddingStart="10sp"
+                                        android:textColor="#ffffff"
+                                        android:paddingLeft="10sp">
+
+                                    </TextView>
+
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="8sp"
+                                        android:textStyle="bold"
+                                        android:textSize="17sp"
+                                        android:layout_gravity="center"
+                                        android:maxLength="14"
+                                        android:gravity="center"
+                                        android:text="Pressure"
+                                        android:paddingStart="10sp"
+                                        android:textColor="#ffffff"
+                                        android:paddingLeft="10sp">
+
+                                    </TextView>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/pressure"
+                                        android:textStyle="bold"
+                                        android:textSize="25sp"
+                                        android:layout_marginTop="1sp"
+                                        android:layout_gravity="center"
+                                        android:maxLength="14"
+                                        android:gravity="center"
+                                        android:text="Fetching___"
+                                        android:paddingStart="10sp"
+                                        android:textColor="#ffffff"
+                                        android:paddingLeft="10sp">
+
+                                    </TextView>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="8sp"
+                                        android:textStyle="bold"
+                                        android:textSize="17sp"
+                                        android:layout_gravity="center"
+                                        android:maxLength="14"
+                                        android:gravity="center"
+                                        android:text="Humidity"
+                                        android:paddingStart="10sp"
+                                        android:textColor="#ffffff"
+                                        android:paddingLeft="10sp">
+
+                                    </TextView>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/humidity"
+                                        android:textStyle="bold"
+                                        android:textSize="25sp"
+                                        android:layout_marginTop="1sp"
+                                        android:layout_gravity="center"
+                                        android:maxLength="14"
+                                        android:gravity="center"
+                                        android:text="Fetching___"
+                                        android:paddingStart="10sp"
+                                        android:textColor="#ffffff"
+                                        android:paddingLeft="10sp">
+
+                                    </TextView>
+
+                                </LinearLayout>
+
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="7sp"
+                                    android:layout_marginTop="10sp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:id="@+id/cityFinder"
+                                    android:background="@drawable/buttondesign"
+                                    android:layout_marginBottom="10dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Search New City"
+                                        android:textColor="#ffffff"
+                                        android:layout_centerInParent="true"
+                                        android:textSize="16sp" />
+
+                                </RelativeLayout>
+                            </LinearLayout>
+
+
+
+
+
+                        </com.google.android.material.card.MaterialCardView>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10sp"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="215dp"
+                            android:id="@+id/tank"
+                            android:backgroundTint="#8BCBFD"
+                            app:cardCornerRadius="6sp"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+                                <com.airbnb.lottie.LottieAnimationView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    app:lottie_rawRes="@raw/water"
+                                    app:lottie_autoPlay="true"
+                                    android:layout_weight="1"
+                                    app:lottie_loop="true"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.001"
+                                    android:gravity="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="15sp"
+                                    android:fontFamily="@font/montserrat_bold"
+                                    android:text="Water Demand And Collection" />
+
+
+                            </LinearLayout>
+
+                        </com.google.android.material.card.MaterialCardView>
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="20sp"
+                            android:id="@+id/lab"
+                            android:layout_height="215dp"
+                            android:backgroundTint="#45A0EA"
+                            app:cardCornerRadius="6sp"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+                                <com.airbnb.lottie.LottieAnimationView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    app:lottie_rawRes="@raw/lap1"
+                                    app:lottie_autoPlay="true"
+                                    android:layout_weight="1"
+                                    app:lottie_loop="true"/>
+
+                                <TextView
+                                    android:id="@+id/textView3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.001"
+                                    android:gravity="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="18sp"
+                                    android:fontFamily="@font/montserrat_bold"
+                                    android:text="Water Test Labs" />
+
+
+                            </LinearLayout>
+
+
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:fabCradleMargin="10dp"
+        app:fabAlignmentMode="center"
+        app:fabCradleRoundedCornerRadius="10dp"
+        app:fabCradleVerticalOffset="10dp">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:labelVisibilityMode="labeled"
+            android:layout_gravity="center"
+            android:layout_marginEnd="10sp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/background_transparent"
+            app:menu="@menu/bottom_nav_menu"
+            android:layout_marginRight="10sp" />
+
+
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        app:fabCustomSize="70dp"
+        app:maxImageSize="46dp"
+        android:src="@drawable/ic_baseline_insert_emoticon_24"
+        app:layout_anchor="@id/bottomAppBar" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

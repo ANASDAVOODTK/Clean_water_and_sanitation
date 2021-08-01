@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Clean water and sanitation</string>
+    <string name="app_name">LiquiDa</string>
+    <string name="mapbox_access_token">pk.eyJ1IjoiYW5hc2Rhdm9vZHRrIiwiYSI6ImNraXQzdDI5ZTByMWEycXNjMmpiMTZ4NWYifQ.YpW7qBJtF2jEzAywI1jveQ</string>
 </resources>
