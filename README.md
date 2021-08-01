@@ -27,7 +27,7 @@ LiquiDa is a Mobile App which helps us to ensure availability and sustainable ma
 
 ### What's the problem?
 
-Part of the World Health Organization's guidance on limiting further spread of COVID-19 is to practice social distancing. As a result, schools in most affected areas are taking precautionary measures by closing their facilities. With school-aged children at home for an indeterminate amount of time, keeping them engaged, entertained, and on top of their education is important.
+Water is the natural resource that is most threatened by climate change and is a prerequisite for life on earth. According to the World Health Organization, 2.2 billion people around the world do not have safely managed drinking water services, 4.2 billion people do not have safely managed sanitation services, and 3 billion people lack basic handwashing facilities. These services are critical in preventing the spread of COVID-19 and other diseases. Even in areas that have these services, there are vast inequalities in the accessibility, availability, and quality of the services.
 
 ### How can technology help?
 
