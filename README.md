@@ -45,7 +45,7 @@ An Application which helps us to ensure availability and sustainable management 
 
 ![Video transcription/translation app](https://dw1.s81c.com/developer-static-pages/callforcode/en/get-started/climate-change/clean-water/images/cfc-cleanwater-architecture.png)
 
-1. The user navigates to the site and uploads a video file.
+1. The user navigates to the Mobile Application
 2. Watson Speech to Text processes the audio and extracts the text.
 3. Watson Translation (optionally) can translate the text to the desired language.
 4. The app stores the translated text as a document within Object Storage.
