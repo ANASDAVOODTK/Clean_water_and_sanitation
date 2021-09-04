@@ -7,15 +7,12 @@ import android.content.pm.PackageManager;
 import android.graphics.Typeface;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 
 import android.os.Handler;
 import android.os.Looper;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -293,7 +290,7 @@ public class BoatActivity extends AppCompatActivity {
                                                         new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
                                                             @Override
                                                             public void run() {
-                                                                Intent intent = new Intent(BoatActivity.this,CovidetailsActivity.class);
+                                                                Intent intent = new Intent(BoatActivity.this, Awareness.class);
                                                                 startActivity(intent);
                                                             }
                                                         }, 1500);

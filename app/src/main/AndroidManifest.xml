@@ -19,7 +19,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CleanWaterAndSanitation">
-        <activity android:name=".WaterQuality"></activity>
+        <activity android:name=".MainDrink"></activity>
+        <activity android:name=".WaterQuality" />
         <activity android:name=".TankActivity" />
         <activity android:name=".MapActivity" />
         <activity
@@ -36,7 +37,8 @@
         <activity android:name=".RainfalActivity" />
         <activity android:name=".GWActivity" />
         <activity android:name=".LABActivity" />
-        <activity android:name=".CovidetailsActivity" />
+        <activity android:name=".Awareness" />
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

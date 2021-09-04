@@ -1,5 +1,8 @@
 package com.anasandalexy.cleanwaterandsanitation;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
@@ -9,16 +12,13 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class CovidetailsActivity extends AppCompatActivity {
+public class MainDrink extends AppCompatActivity {
 
     private WebView mywebView;
     ProgressBar progressBar;
-    String url = "https://anasdavoodtk1.gitbook.io/liquida/";
+    String url = "https://konneki.github.io/hydrapp/";
     BottomNavigationView bottomNavigation;
 
     @Override
@@ -33,7 +33,7 @@ public class CovidetailsActivity extends AppCompatActivity {
         mywebView = findViewById(R.id.webView);
         progressBar = findViewById(R.id.progressBar);
 
-        mywebView.setWebViewClient(new notreWebView());
+        mywebView.setWebViewClient(new MainDrink.notreWebView());
         mywebView.getSettings().setJavaScriptEnabled(true);
         mywebView.getSettings().setBuiltInZoomControls(true);
         mywebView.getSettings().setDisplayZoomControls(false);
@@ -51,7 +51,7 @@ public class CovidetailsActivity extends AppCompatActivity {
                         overridePendingTransition(0, 0);
                         break;
                     case R.id.home:
-                        Intent intent = new Intent(CovidetailsActivity.this,MainActivity.class);
+                        Intent intent = new Intent(MainDrink.this,MainActivity.class);
                         overridePendingTransition(0, 0);
                         startActivity(intent);
                         finish();
@@ -61,7 +61,7 @@ public class CovidetailsActivity extends AppCompatActivity {
 
                         //Intent intent2 = new Intent(HotspotActivity.this,VaccineActivity.class);
                         overridePendingTransition(0, 0);
-                       // startActivity(intent2);
+                        // startActivity(intent2);
                         finish();
                         overridePendingTransition(0, 0);
                         break;

@@ -78,16 +78,16 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.hotspot:
-                        Intent intent1 = new Intent(MainActivity.this,CovidetailsActivity.class);
+                        Intent intent1 = new Intent(MainActivity.this, Awareness.class);
                         overridePendingTransition(0, 0);
                         startActivity(intent1);
                         finish();
                         overridePendingTransition(0, 0);
                         break;
                     case R.id.more:
-                        //Intent intent = new Intent(MainActivity2.this,HotspotActivity.class);
+                        Intent intent = new Intent(MainActivity.this,MainDrink.class);
                         overridePendingTransition(0, 0);
-                        //startActivity(intent);
+                        startActivity(intent);
                         finish();
                         overridePendingTransition(0, 0);
                         break;
