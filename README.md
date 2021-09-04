@@ -1,6 +1,6 @@
 # LiquiDa
  LiquiDa is a Mobile App which helps us to ensure availability and sustainable management of clean water.
- [Check This Branch For Hardware Part](https://github.com/upkarlidder/ibmhacks)
+ [Check This Branch For Hardware Part](https://github.com/ANASDAVOODTK/Clean_water_and_sanitation/tree/IoT_Branch)
  
  ![Video transcription/translation app](https://github.com/ANASDAVOODTK/Clean_water_and_sanitation/blob/master/Capture.PNG)
 ## Contents
@@ -32,17 +32,25 @@ LiquiDa is a Mobile App which helps us to ensure availability and sustainable ma
 
 Water is the natural resource that is most threatened by climate change and is a prerequisite for life on earth. According to the World Health Organization, 2.2 billion people around the world do not have safely managed drinking water services, 4.2 billion people do not have safely managed sanitation services, and 3 billion people lack basic handwashing facilities. These services are critical in preventing the spread of COVID-19 and other diseases. Even in areas that have these services, there are vast inequalities in the accessibility, availability, and quality of the services.
 
+The main problems we try to solev is :
+* There is no platform to know the groundwater level
+* No Platform to get  water quantity, quality at particular place
+* Limited Awareness platform about clean water and sanitisation
+* No interactive voice assistant
+* No platform to know water quality testing labs
+
+
 ### How can technology help?
 
 From intelligent solutions for small farmers to recycling showers, technology can make a significant impact on the availability of water and its consumption.
 To encourage optimal water use by people and local governments and to incentivize water sustainability, we propose a platform for water data collection with API, Water Quality Testing Using IoT, Awareness about clean water sanitation.
 
 ### The idea
-An Application which helps us to ensure availability and sustainable management of clean water
+An Application which helps us to ensure availability and sustainable management of clean water. And we are trying to implemt a common platform for both the people and government authorities to upload data about water quality.
 
 ## Demo video
 
-[![Watch the video](https://github.com/Call-for-Code/Liquid-Prep/blob/master/images/readme/IBM-interview-video-image.png)](https://youtu.be/8D5-Wt8p45M)
+[![Watch the video](https://github.com/ANASDAVOODTK/Clean_water_and_sanitation/blob/master/Copy%20of%20Untitled.png)](https://youtu.be/8D5-Wt8p45M)
 
 ## The architecture
 
@@ -61,11 +69,11 @@ The project currently does the following things.
 - Feature 2
 - Feature 3
 
-It's in a free tier IBM Cloud Kubernetes cluster. In the future we plan to run on Red Hat OpenShift, for example.
+It's in a free tier IBM Cloud and use only the services avaliable in lite account. In the future we plan to make to serverless by fetching the data in realtime.
 
-See below for our proposed schedule on next steps after Call for Code 2021 submission.
+See below for our roadmap.
 
-![Roadmap](./images/roadmap.jpg)
+![Roadmap](https://github.com/ANASDAVOODTK/Clean_water_and_sanitation/blob/master/roadmap.png)
 
 ## Getting started
 
@@ -81,28 +89,18 @@ You can find a running system to test at [callforcode.mybluemix.net](http://call
 
 ## Built with
 
-- [IBM Cloudant](https://cloud.ibm.com/catalog?search=cloudant#search_results) - The NoSQL database used
-- [IBM Cloud Functions](https://cloud.ibm.com/catalog?search=cloud%20functions#search_results) - The compute platform for handing logic
+- [IBM Watson](https://www.ibm.com/watson) - For intrecting with voice assistant
+- [IBM Block Storage](https://www.ibm.com/cloud/learn/block-storage) - A storage platform to store JSON Data
 - [IBM API Connect](https://cloud.ibm.com/catalog?search=api%20connect#search_results) - The web framework used
-- [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-- [Maven](https://maven.apache.org/) - Dependency management
-- [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+- [Firebase](https://firebase.google.com/) - Realtime Database
+- [Volley Library](https://developer.android.com/training/volley/) - API Management
+- [Mapbox](https://www.mapbox.com/) - Used to generate RSS Feeds
 
 ## Contributing
 
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
-
 ## Authors
-
-<a href="https://github.com/Call-for-Code/Project-Sample/graphs/contributors">
-  <img src="https://contributors-img.web.app/image?repo=Call-for-Code/Project-Sample" />
-</a>
-
-- **Billie Thompson** - _Initial work_ - [PurpleBooth](https://github.com/PurpleBooth)
 
 ## License
 
